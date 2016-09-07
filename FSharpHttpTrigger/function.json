@@ -1,12 +1,16 @@
 {
-    "disabled": false,
     "bindings": [
         {
-            "name": "input",
-            "type": "queueTrigger",
-            "direction": "in",
-            "queueName": "samples-fsharp",
-            "connection":""
+            "name": "req",
+            "type": "httpTrigger",
+            "authLevel": "anonymous",
+            "direction": "in"
+        },
+        {
+            "type": "http",
+            "name": "res",
+            "direction": "out"
         }
-    ]
+    ],
+    "disabled": false
 }
