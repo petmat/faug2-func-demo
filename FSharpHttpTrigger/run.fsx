@@ -40,7 +40,7 @@ let getEmoji face =
     match face.Scores with
         | scores when scores.Anger > 0.1 -> "angry.png"
         | scores when scores.Fear > 0.1 -> "afraid.png"
-        | scores when scores.Fear > 0.1 -> "sad.png"
+        | scores when scores.Sadness > 0.1 -> "sad.png"
         | scores when scores.Happiness > 0.5 -> "happy.png"
         | _ -> "neutral.png"
 
